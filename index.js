@@ -5,9 +5,9 @@ const app = express()
 
 app.use('/places', require('./controllers/places'))
 
-app.get('/', function (req, res) {
-    res.send('Home Page')
-})
+// app.get('/', function (req, res) {
+//     res.send('Home Page')
+// })
 
 app.get('*', function (req, res) {
     res.status(404).send('<h1>This aint it (404)<h1>')

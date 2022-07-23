@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('*', function (req, res) {
-    res.status(404).send('<h1>This aint it (404)<h1>')
+    res.render('error404')
 })
 
 app.listen(process.env.PORT)

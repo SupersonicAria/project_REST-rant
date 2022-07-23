@@ -5,5 +5,9 @@ h1 {
 
 
 #food {
-    transform: scale(.3);
+    transform: scale(.3) translate(-95%);
+}
+
+#box {
+    transform: scale(.3)
 }

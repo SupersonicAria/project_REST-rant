@@ -1,13 +1,15 @@
 const router = require('express').Router()
-
-router.get('/new', (req, res) => {
-  res.render('places/new')
-})
+const bodyParser = require('body-parser')
 
 router.post('/', (req, res) => {
   console.log(req.body)
   res.send('POST /places')
 })
+
+router.get('/new', (req, res) => {
+  res.render('places/new')
+})
+
 
 
 router.get('/', (req, res) => {

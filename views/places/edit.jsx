@@ -31,16 +31,16 @@ function edit_form(data) {
                             <label htmlFor="state">State</label>
                             <input className="form-control" id="state" value={data.place.state} name="state" />
                         </div>
-                    </div>        
-                <div className="form-group">
-                    <div className="form-group col-sm-6">
-                        <label htmlFor="cuisines">Cuisines</label>
-                        <input className="form-control" id="cuisines" value={data.place.cuisines} name="cuisines" required />
                     </div>
-                </div>
-                <input className="btn btn-primary" type="submit" value="Submit" />
-            </form>
-        </main>
+                    <div className="form-group">
+                        <div className="form-group col-sm-6">
+                            <label htmlFor="cuisines">Cuisines</label>
+                            <input className="form-control" id="cuisines" value={data.place.cuisines} name="cuisines" required />
+                        </div>
+                    </div>
+                    <input className="btn btn-primary" type="submit" value="Submit" />
+                </form>
+            </main>
         </Def >
     )
 }
